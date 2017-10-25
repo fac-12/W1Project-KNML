@@ -41,7 +41,7 @@ body {
 .main-img h1 {
   font-size: 32px;
   left: 0;
-  position: fixed;
+  position: relative;
   text-align: center;
   top: 120px;
   width: 100%;
