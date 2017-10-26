@@ -107,16 +107,18 @@ body {
   font-size: 3rem;
   color: #282c34;
   padding-left: 10%;
-  padding-top: 10%;
+  margin-top: -7%;
+  padding-top: 15%;
   color: #f7c62d;
 }
+
 form {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   box-sizing: border-box;
-  padding-top:50px;
+  padding-top:40px;
   border: 1px solid #f7c62d;
   background-color: #ffffff;
 }
