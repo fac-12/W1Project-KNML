@@ -99,7 +99,7 @@ body {
 }
 
 .contact {
-  background-color:#ffff;
+  background-color:#f6f6f6;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -120,27 +120,32 @@ form {
   box-sizing: border-box;
   padding-top:50px;
   border: 1px solid #f7c62d;
+  background-color: #ffffff;
 }
 
 input {
   border: 1px solid #f7c62d;
   width: 200px;
   margin-bottom: 2em;
+  background-color: #ffffff;
 }
 input[type='submit']{
   background-color: #f7c62d;
 }
 .contact__form__message {
+
   border: 1px solid #f7c62d;
   resize: none;
   height: 300px;
   width: 200px;
+  margin-bottom: 15px;
 }
 .contact__details {
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 1px solid #f7c62d;
+  background-color: #ffffff;
   overflow:visible;
 }
 
@@ -184,6 +189,43 @@ input[type='submit']{
     font-size: 22px;
   }
 
+.container {
+  display: flex;
+  justify-content: center;
+}
+form {
+  width: 40%;
+  border: 2px solid #f7c62d;
+}
+
+form input {
+  width: 250px;
+  height: 30px;
+}
+
+form input::-webkit-input-placeholder  {
+  font-size: 16px;
+}
+
+.contact__form__message {
+  font-size: 16px;
+  width: 250px;
+  margin-bottom: 15px;
+}
+
+.contact__details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  border: 2px solid #f7c62d;
+  margin-left: 15px;
+}
+
+
+.details tr td {
+  padding: 10px;
+}
 
 .team section {
   max-height: 50vh;
@@ -207,6 +249,7 @@ input[type='submit']{
   max-height: 250px;
   object-fit: cover;
  }
+
 
  @media (min-device-width: 769px) and (min-width: 769px){
    .about__text {
