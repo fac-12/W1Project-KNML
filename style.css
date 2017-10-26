@@ -107,9 +107,11 @@ body {
   font-size: 3rem;
   color: #282c34;
   padding-left: 10%;
-  padding-top: 10%;
+  margin-top: -7%;
+  padding-top: 15%;
   color: #f7c62d;
 }
+
 form {
   display: flex;
   flex-direction: column;
