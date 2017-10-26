@@ -184,6 +184,10 @@ input[type='submit']{
     font-size: 22px;
   }
 
+.team {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
 
 .team section {
   max-height: 50vh;
@@ -196,6 +200,9 @@ input[type='submit']{
 .team section p {
   width: 50%;
   text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  box-sizing: border-box;
 }
 
 .team section div {
