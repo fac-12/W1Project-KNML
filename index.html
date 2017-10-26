@@ -6,34 +6,44 @@
       <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
       <!-- <link rel="stylesheet" type="text/css" href="normalize.css"> -->
       <link rel="stylesheet" type="text/css" href="style.css">
+      <meta author="KMNL" />
+      <meta description="Project for week 1" />
+      <meta charset="utf-8" />
+      <meta name="viewport" content="initial-scale=1">
   </head>
   <body>
+<header>
     <nav class="main-nav">
-<a href="#home">
-  <i class="fa fa-home"> </i>
-  <li>  Home </li>
-</a>
-<a href="#about">
-  <i class="fa fa-info"> </i>
-  <li> About </li>
-</a>
-<a href="#team">
-  <i class="fa fa-user"> </i>
-  <li>Team </li>
-</a>
-<a href="#contact">
-  <i class="fa fa-phone"> </i>
-  <li>Contact </li>
-</a>
-</nav>
-<section class="home" id='home'>
-  <header class="home__header">
-  <h1 class="main-heading"> Project-KNML </h1>
-    <p> Four developers, One goal, To give life to your vision </p>
+          <ul>
+              <li>
+                <i class="fa fa-home">
+                  <a href="#home"> Home </a>
+                </i>
+              </li>
+              <li>
+                <i class="fa fa-info">
+                  <a href="#about"> About </a>
+                </i>
+              </li>
+              <li>
+                <i class="fa fa-user"><a href="#team"> Team </a></i>
+              </li>
+              <li>
+                <i class="fa fa-phone"><a href="#contact"> Contact </a></i>
+              </li>
+          </ul>
+    </nav>
+
 </header>
-</section>
+  <header class="home" id='home'>
+    <header class="home__header">
+    <h1 class="main-heading"> Project-KNML </h1>
+      <p> Four developers, One goal, To give life to your vision </p>
+  </header>
+  </header>
     <main>
-      <section class='about' id='about'>
+      <section class='about' id='about' name="about">
+        <h2> About </h2>
         <article class='about__text'>
           <p>We are a team of four developers located in and around London. With a unique
              set of skills and interests we are committed to sustainability,
@@ -47,32 +57,21 @@
       </section>
 
       <section class='team' id='team'>
+        <h2> Team </h2>
         <section class='team__kitty'>
           <div><img alt="Picture of Kitty" src="Kitty.jpg"></div>
-          <p>Kitty
-            <br>Skills: CSS (flex box).
-            <br>Interests: Minimalism, Archeology, Scuba Diving
-          </p>
+          <p> This is Kitty. </p>
         </section>
         <section class='team__mo'>
-          <p> Mohamed
-            <br>Skills: Digital Media
-            <br>Interests: Technology, Psychology
-          </p>
+          <p> This is Mohamed. </p>
           <div><img alt="Picture of Mohamed" src="Mohamed.jpg"></div>
         </section>
         <section class='team__nat'>
           <div><img alt="Picture of Natalie" src="Nat.jpg"></div>
-          <p> Natalie
-            <br>Skills: Pair programming, Javascript, strategy, reverse parking
-            <br>Interests: Drums and musicals
-          </p>
+          <p> This is Natalie. </p>
         </section>
         <section class='team__lucy'>
-          <p> Lucy
-            <br>Skills: Javascript, CSS, looking on the bright side
-            <br>Interests: Crafting and bicycles
-          </p>
+          <p> This is Lucy. </p>
           <div><img alt="Picture of Lucy" src="Lucy.jpg"></div>
         </section>
       </section>
@@ -82,16 +81,16 @@
           <h2>Contact</h2>
         </header>
         <div class="container">
-        <form>
+        <form action="/" method="post">
           <label for='name'></label>
-          <input type='text' id='name' placeholder="Name">
+          <input type='text' id='name' name="name" aria-label="name" placeholder="Name">
           <label for='email'></label>
-          <input type='email' id='email' placeholder="Email">
+          <input type='email' id='email' name="email"  aria-label="email" placeholder="Email">
           <label for='subject'></label>
-          <input type='text' id='subject' placeholder="Subject">
+          <input type='text' id='subject' name="subject" aria-label="subject" placeholder="Subject">
           <label for='message'></label>
-          <textarea id='message' class='contact__form__message' placeholder="Please leave us a message..."></textarea>
-          <input type='submit' value='submit'>
+          <textarea id='message' class='contact__form__message' name="message" aria-label="message" placeholder="Please leave us a message..."></textarea>
+          <input type='submit' name="submit" aria-label="submit" value='submit'>
         </form>
 
 
