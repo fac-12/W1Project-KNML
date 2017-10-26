@@ -200,6 +200,9 @@ input[type='submit']{
 .team section p {
   width: 50%;
   text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  box-sizing: border-box;
 }
 
 .team section div {
