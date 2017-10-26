@@ -73,7 +73,7 @@ body {
 
 .about__text {
   max-width: 70%;
-  font-size: 3em;
+  font-size: 6vmin;
   font-family: 'Roboto', sans-serif;
   color: #282c34;
   margin: 10%;
