@@ -225,6 +225,11 @@ form input::-webkit-input-placeholder  {
 
 .details tr td {
   padding: 10px;
+  }
+  
+.team {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 .team section {
@@ -238,6 +243,9 @@ form input::-webkit-input-placeholder  {
 .team section p {
   width: 50%;
   text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  box-sizing: border-box;
 }
 
 .team section div {
