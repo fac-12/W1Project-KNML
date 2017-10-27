@@ -101,14 +101,16 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  height: 100vh;
 }
 
  h2 {
-  font-size: 3rem;
+   display: none;
+  /*font-size: 3rem;
   color: #282c34;
   padding-left: 10%;
   padding-top: 10%;
-  color: #282c43;
+  color: #282c43;*/
 }
 
 
