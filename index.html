@@ -4,43 +4,34 @@
       <title> Project-KNML </title>
       <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
-      <!-- <link rel="stylesheet" type="text/css" href="normalize.css"> -->
       <link rel="stylesheet" type="text/css" href="style.css">
       <meta author="KMNL" />
       <meta description="Project for week 1" />
       <meta charset="utf-8" />
-      <meta name="viewport" content="initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
 <header>
-    <nav class="main-nav">
-          <ul>
-              <li>
-                  <a href="#home"> Home </a>
-              </li>
-              <li>
-                  <a href="#about"> About </a>
-              </li>
-              <li>
-                <a href="#team"> Team </a>
-              </li>
-              <li>
-                <a href="#contact"> Contact </a>
-              </li>
-          </ul>
-    </nav>
-
+  <nav class="nav" role='navigation'>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#team">Team</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 </header>
-  <header class="home" id='home'>
-    <header class="home__header">
-    <h1 class="main-heading"> Project-KNML </h1>
-      <p> Four developers, One goal, To give life to your vision </p>
-  </header>
-  </header>
+<section class="home" id='home'>
+  <div class="home__header">
+    <h1 class="main-heading"> Students-Hack </h1>
+    <p> Four developers, One goal, To give life to your vision </p>
+  </div>
+</section>
     <main>
       <section class='about' id='about' name="about">
-        <h2> About </h2>
+   <h2> About </h2>
         <article class='about__text'>
+
           <p>We are a team of four developers located in and around London. With a unique
              set of skills and interests we are committed to sustainability,
              creatvity and positive working realationships. </p>
@@ -52,22 +43,34 @@
         </aside>
       </section>
 
-      <section class='team' id='team'>
-        <h2> Team </h2>
-        <section class='team__kitty'>
-          <div><img alt="Picture of Kitty" src="Kitty.jpg"></div>
-          <p> This is Kitty. </p>
-        </section>
-        <section class='team__mo'>
-          <p> This is Mohamed. </p>
-          <div><img alt="Picture of Mohamed" src="Mohamed.jpg"></div>
-        </section>
-        <section class='team__nat'>
-          <div><img alt="Picture of Natalie" src="Nat.jpg"></div>
-          <p> This is Natalie. </p>
-        </section>
-        <section class='team__lucy'>
-          <p> This is Lucy. </p>
+<section class='team' id='team'>
+  <h2> Team </h2>
+  <section class='team__kitty'>
+    <div><img alt="Picture of Kitty" src="Kitty.jpg"></div>
+    <p>Kitty
+      <br>Skills: CSS (flex box).
+      <br>Interests: Minimalism, Archeology, Scuba Diving
+    </p>
+  </section>
+  <section class='team__mo'>
+    <p> Mohamed
+      <br>Skills: Digital Media
+      <br>Interests: Technology, Psychology
+    </p>
+    <div><img alt="Picture of Mohamed" src="Mohamed.jpg"></div>
+  </section>
+  <section class='team__nat'>
+    <div><img alt="Picture of Natalie" src="Nat.jpg"></div>
+    <p> Natalie
+      <br>Skills: Pair programming, Javascript, strategy, reverse parking
+      <br>Interests: Drums and musicals
+    </p>
+  </section>
+  <section class='team__lucy'>
+    <p> Lucy
+      <br>Skills: Javascript, CSS, looking on the bright side
+      <br>Interests: Crafting and bicycles
+    </p>
           <div><img alt="Picture of Lucy" src="Lucy.jpg"></div>
         </section>
       </section>
@@ -76,7 +79,7 @@
         <header>
           <h2>Contact</h2>
         </header>
-        <div class="container">
+        <div class="contact__form">
         <form action="/" method="post">
           <label for='name'></label>
           <input type='text' id='name' name="name" aria-label="name" placeholder="Name">
@@ -86,41 +89,42 @@
           <input type='text' id='subject' name="subject" aria-label="subject" placeholder="Subject">
           <label for='message'></label>
           <textarea id='message' class='contact__form__message' name="message" aria-label="message" placeholder="Please leave us a message..."></textarea>
-          <input type='submit' name="submit" aria-label="submit" value='submit'>
+          <button type='submit' name="submit" aria-label="submit" value='submit'>Submit</button>
         </form>
+      </div>
 
 
         <article class='contact__details'>
         <table class="details">
           <tr>
             <td>
-                <i class="fa fa-phone"> </i>
+              <i class="fa fa-phone"> </i>
             </td>
-            <td>
+              <td>
                 02034569872
-            </td>
-          </tr>
-          <tr>
-            <td>
+              </td>
+            </tr>
+            <tr>
+              <td>
                 <i class="fa fa-envelope-o"> </i>
-            </td>
-            <td>
+              </td>
+              <td>
                 KNML@KNML.COM
-            </td>
-          </tr>
-          <tr>
-            <td>
-                <i class="fa fa-map-marker"> </i>
-            </td>
-            <td>
+              </td>
+            </tr>
+            <tr>
+              <td>
+              <i class="fa fa-map-marker"> </i>
+              </td>
+              <td>
                 14 Palmers Road<br>
                  Bethnal Green
                 <br>London
                 <br>E2 0SY
-            </td>
-          </tr>
+              </td>
+            </tr>
         </table>
-        </article>
+      </article>
       </div>
       </section>
     </main>

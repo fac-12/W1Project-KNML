@@ -4,9 +4,7 @@ body {
   font-weight: 300;
 }
 
-.main-nav {
-  display: flex;
-  justify-content: flex-start;
+.nav {
   position: fixed;
   z-index: 1;
   width: 100%;
@@ -14,14 +12,17 @@ body {
   height: 9%;
 }
 
-.main-nav ul {
-  display: flex;
+.nav ul {
   list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+.nav ul li {
+  padding-right: 4%;
+  padding-left: 4%;
 }
 
-.main-nav ul li a{
-  display: flex;
-  margin-left: 20px;
+.nav ul li a{
   font-family: Roboto, sans-serif;
   font-size: 16px;
   color: black;
@@ -96,14 +97,16 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  height: 100vh;
 }
 
  h2 {
-  font-size: 3rem;
+   display: none;
+  /*font-size: 3rem;
   color: #282c34;
   padding-left: 10%;
   padding-top: 10%;
-  color: #282c43;
+  color: #282c43;*/
 }
 
 form {
@@ -113,9 +116,7 @@ form {
   align-items: center;
   box-sizing: border-box;
   padding-top:50px;
-  outline: 1px solid #f7c62d;
   padding-bottom: 20px;
-  outline-offset: -15px;
   background-color: #ffffff;
 }
 
@@ -125,19 +126,20 @@ input {
   margin-bottom: 2em;
   background-color: #ffffff;
 }
-
 input[type='submit']{
   background-color: #f7c62d;
   margin: 10px;
 }
-
 .contact__form__message {
   border: 1px solid #f7c62d;
   resize: none;
   height: 200px;
   width: 200px;
 }
-
+.contact__form {
+  outline: 1px solid #f7c62d;
+  outline-offset: -15px;
+}
 .contact__details {
   display: flex;
   flex-direction: column;
@@ -152,6 +154,12 @@ input[type='submit']{
   outline-offset: -15px;
   overflow:visible;
 }
+button {
+  background-color: #f7c62d;
+  border: none;
+  margin-top: 2%;
+}
+
 
 @media (min-device-width: 769px) and (min-width: 769px){
   .about__text {
@@ -206,68 +214,17 @@ input[type='submit']{
    }
 }
 
-@media (min-width: 550px){
-  .contact {
-    font-size: 16px;;
-  }
-  .main-nav i {
-    font-size: 2rem;
-  }
-  .main-nav a li {
-    font-size: 1rem;
-  }
-}
 @media (min-width: 765px){
-  .contact{
-    font-size: 22px;
-  }
-
-.container {
-  display: flex;
-  justify-content: center;
-}
-
-form {
-  width: 40%;
-  outline: 2px solid #f7c62d;
-}
-
-form input {
-  width: 250px;
-  height: 30px;
-}
-
-form input::-webkit-input-placeholder  {
-  font-size: 16px;
-}
-
-.contact__form__message {
-  font-size: 16px;
-  width: 250px;
-  margin-bottom: 15px;
-}
-
-.contact__details {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40%;
-  outline: 2px solid #f7c62d;
-  margin-left: 15px;
-}
-
-.main-nav ul a{
-  text-align: center;
-  padding-left: 60px;
-}
 
 .details tr td {
   padding: 10px;
   }
 
 .team {
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  /*padding-top: 10vh;
+  padding-bottom: 10vh;*/
+  padding-top: 25vh;
+  padding-bottom: 20vh;
 }
 
 .team section {
@@ -287,6 +244,7 @@ form input::-webkit-input-placeholder  {
 }
 
 .team section div {
+  /*width: 50vw;*/
   width: 50%;
 }
 
@@ -295,4 +253,101 @@ form input::-webkit-input-placeholder  {
   max-height: 250px;
   object-fit: cover;
  }
+
+ form input {
+   width: 250px;
+   height: 30px;
+ }
+
+ form input::-webkit-input-placeholder  {
+   font-size: 16px;
+ }
+
+ .contact__form__message {
+   font-size: 16px;
+   width: 250px;
+   margin-bottom: 15px;
+ }
+
+ .contact__details {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 35%;
+   outline: 2px solid #f7c62d;
+   margin-top: 0;
+ }
+ .contact {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   max-height: 75vh;
+ }
+ .contact__form {
+   width: 35%;
+   outline: 2px solid #f7c62d;
+ }
 }
+
+ @media (min-device-width: 769px) and (min-width: 769px){
+
+   .nav ul li a {
+     font-size: 20px;
+   }
+   .about__text {
+     min-width: 100%;
+     height: 70%;
+     margin: 0;
+     display: flex;
+     align-items: center;
+     padding-left: 10%;
+     padding-right: 10%;
+     box-sizing: border-box;
+   }
+
+   .about {
+     flex-wrap: wrap;
+   }
+
+   .about__images {
+     width: 100%;
+     height: 30%;
+     padding: 0;
+     flex-direction: row;
+     justify-content: space-around;
+   }
+
+   .team {
+     padding-top: 10vh;
+   }
+
+   .team section {
+     max-height: 50vh;
+     max-width: 100vw;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+   }
+
+   .team section p {
+     width: 50%;
+     flex-direction: column;
+     text-align: center;
+   }
+
+   .team section div {
+     width: 50vw;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+   }
+
+   .team section img {
+     height: 250px;
+     padding-top: 10px;
+     width: auto;
+    }
+
+ }
