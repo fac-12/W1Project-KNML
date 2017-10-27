@@ -23,6 +23,7 @@ body {
   align-items: center;
   min-width: 100%;
   font-size: 1rem;
+  margin-right: 7%;
 }
 
 .nav ul li a{
@@ -112,11 +113,6 @@ font-weight: bold;
 
  h2 {
    display: none;
-  /*font-size: 3rem;
-  color: #282c34;
-  padding-left: 10%;
-  padding-top: 10%;
-  color: #282c43;*/
 }
 
 form {
@@ -139,6 +135,15 @@ input {
 input[type='submit']{
   background-color: #f7c62d;
   margin: 10px;
+}
+
+.contact__heading {
+  display: inline-block;
+  font-size: 3rem;
+  color: #282c34;
+  padding-left: 10%;
+  padding-top: 10%;
+  color: #282c43;
 }
 .contact__form__message {
   border: 1px solid #f7c62d;
@@ -275,10 +280,11 @@ button {
  form input {
    width: 250px;
    height: 30px;
+   padding: 1rem;
  }
 
  form input::-webkit-input-placeholder  {
-   font-size: 16px;
+   font-size: 24px;
  }
 
  .contact__form__message {
