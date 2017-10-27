@@ -96,14 +96,16 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  height: 100vh;
 }
 
  h2 {
-  font-size: 3rem;
+   display: none;
+  /*font-size: 3rem;
   color: #282c34;
   padding-left: 10%;
   padding-top: 10%;
-  color: #282c43;
+  color: #282c43;*/
 }
 
 
@@ -224,8 +226,10 @@ form input::-webkit-input-placeholder  {
   }
 
 .team {
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  /*padding-top: 10vh;
+  padding-bottom: 10vh;*/
+  padding-top: 25vh;
+  padding-bottom: 20vh;
 }
 
 .team section {
@@ -245,6 +249,7 @@ form input::-webkit-input-placeholder  {
 }
 
 .team section div {
+  /*width: 50vw;*/
   width: 50%;
 
 }
@@ -281,6 +286,10 @@ form input::-webkit-input-placeholder  {
      padding: 0;
      flex-direction: row;
      justify-content: space-around;
+   }
+
+   .team {
+     padding-top: 10vh;
    }
 
    .team section {
