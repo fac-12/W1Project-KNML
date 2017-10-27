@@ -15,7 +15,7 @@ body {
 .nav ul {
   list-style: none;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
 }
 .nav ul li {
   padding-right: 4%;
@@ -24,7 +24,7 @@ body {
 
 .nav ul li a{
   font-family: Roboto, sans-serif;
-  font-size: 16px;
+  font-size: 40px;
   color: black;
   text-decoration: none;
 }
@@ -44,10 +44,17 @@ body {
   height: 100vh;
 }
 
+.home div{
+font-size: 8vmin;
+font-weight: bold;
+}
+
 .home__header {
   background-color: #ffffff;
   padding: 3%;
   opacity: 0.8;
+  font-size: 6vmin;
+  width: 80vw;
 }
 
 .main-heading {
@@ -233,6 +240,14 @@ button {
   display: flex;
   flex-direction: row;
   align-items: center;
+  font-size: 25px;
+}
+
+.team__kitty,
+.team__nat,
+.team__mo {
+  border-bottom-style: solid;
+  border-bottom-color: #f7c62d;
 }
 
 .team section p {
@@ -346,7 +361,8 @@ button {
 
    .team section img {
      height: 250px;
-     padding-top: 10px;
+     padding-top: 5px;
+     padding-bottom: 5px;
      width: auto;
     }
 
