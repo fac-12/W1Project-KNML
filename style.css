@@ -4,9 +4,7 @@ body {
   font-weight: 300;
 }
 
-.main-nav {
-  display: flex;
-  justify-content: flex-start;
+.nav {
   position: fixed;
   z-index: 1;
   width: 100%;
@@ -14,20 +12,17 @@ body {
   height: 9%;
 }
 
-.main-nav ul {
-  display: flex;
+.nav ul {
   list-style: none;
-}
-
-.main-nav ul li
-.main-nav ul li i {
-  font-size: 32px;
-  text-align: center;
-}
-
-.main-nav ul li i a{
   display: flex;
-  margin-left: 20px;
+  justify-content: flex-end;
+}
+.nav ul li {
+  padding-right: 4%;
+  padding-left: 4%;
+}
+
+.nav ul li a{
   font-family: Roboto, sans-serif;
   font-size: 16px;
   color: black;
@@ -187,12 +182,6 @@ input[type='submit']{
   .contact {
     font-size: 16px;;
   }
-  .main-nav i {
-    font-size: 2rem;
-  }
-  .main-nav a li {
-    font-size: 1rem;
-  }
 }
 @media (min-width: 765px){
   .contact{
@@ -230,11 +219,6 @@ form input::-webkit-input-placeholder  {
   width: 40%;
   outline: 2px solid #f7c62d;
   margin-left: 15px;
-}
-
-.main-nav ul a{
-  text-align: center;
-  padding-left: 60px;
 }
 
 .details tr td {
@@ -277,6 +261,10 @@ form input::-webkit-input-placeholder  {
 
 
  @media (min-device-width: 769px) and (min-width: 769px){
+
+   .nav ul li a {
+     font-size: 20px;
+   }
    .about__text {
      min-width: 100%;
      height: 70%;
